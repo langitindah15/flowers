@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <audio src="lagu1 (2).mp3" autoplay loop></audio>
+    <title>For DHEA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: #fff5f7;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* Background gradasi gelap ke maroon/pink tua agar elegan */
+            background: radial-gradient(circle, #1a0a0d 0%, #050505 100%);
+            overflow: hidden;
+        }
+
+        /* --- Animasi Glow Pink Soft --- */
+        .greetings {
+            font-size: 6rem;
+            font-weight: 900;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .greetings > span {
+            animation: glow 2.5s ease-in-out infinite;
+            color: #1a1a1a; /* Warna saat redup */
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                color: #fff;
+                /* Glow warna Pink Soft / Sakura */
+                text-shadow: 0 0 15px #ffb6c1, 0 0 40px #ff69b4, 0 0 80px #ff69b4;
+            }
+            10%, 90% {
+                color: #2a1a1c;
+                text-shadow: none;
+            }
+        }
+
+        /* Delay per huruf */
+        .greetings > span:nth-child(1) { animation-delay: 0.1s; }
+        .greetings > span:nth-child(2) { animation-delay: 0.3s; }
+        .greetings > span:nth-child(3) { animation-delay: 0.5s; }
+        .greetings > span:nth-child(4) { animation-delay: 0.7s; }
+
+        /* --- Deskripsi --- */
+        .description {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-weight: 300;
+            letter-spacing: 3px;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        /* --- Tombol Kotak Pink Soft --- */
+        .button button {
+            background: rgba(255, 182, 193, 0.1); /* Transparansi Pink */
+            border: 2px solid #ffb6c1; /* Border Pink Soft */
+            padding: 16px 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.15);
+            position: relative;
+        }
+
+        .button button a {
+            text-decoration: none;
+            color: #ffb6c1;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.4s;
+        }
+
+        /* Efek Hover (Menyala Pink) */
+        .button button:hover {
+            background: #ffb6c1;
+            transform: translateY(-12px);
+            box-shadow: 0 0 30px #ffb6c1, 0 0 60px rgba(255, 182, 193, 0.4);
+        }
+
+        .button button:hover a {
+            color: #4a0e1c; /* Tulisan jadi gelap saat tombol menyala terang */
+        }
+
+        /* Efek Klik */
+        .button button:active {
+            transform: translateY(-4px);
+        }
+
+        /* --- Responsif Mobile --- */
+        @media screen and (max-width: 574px) {
+            .greetings {
+                font-size: 3.5rem;
+                gap: 5px;
+            }
+            .description {
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+            .button button {
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="greetings">
+        <span>D</span>
+        <span>H</span>
+        <span>E</span>
+        <span>A</span>
+    </div>
+
+    <div class="description">
+        <span>For Someone Special</span>
+    </div>
+
+    <div class="button">
+        <button>
+            <a href="flower.html">See the Flowers</a>
+        </button>
+    </div>
+
+</body>
+</html>
